@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "4d3440de-b48e-4bf4-89d7-a3b04d8e08b1",
+		"name": "pm2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29900024"
+	},
+	"item": [
+		{
+			"name": "fileUpload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "upload",
+							"type": "file",
+							"src": "/C:/Users/yogesh/Downloads/data-sheetNodejsAssesment.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fileUpload Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "upload",
+							"type": "file",
+							"src": "/C:/Users/yogesh/Downloads/data-sheetNodejsAssesment.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchAPIPolicyInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "upload",
+							"type": "file",
+							"src": "/C:/Users/yogesh/Downloads/data-sheetNodejsAssesment.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/file/policyinfo/maikelnai@msn.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"file",
+						"policyinfo",
+						"maikelnai@msn.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"message\": \"Today message\",\r\n  \"day\": 1,      \r\n  \"time\": \"09:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/file/message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"file",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
